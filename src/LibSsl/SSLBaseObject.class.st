@@ -4,7 +4,8 @@ Class {
 	#traits : 'LibTSsl',
 	#classTraits : 'LibTSsl classTrait',
 	#pools : [
-		'SSLSslTypedef'
+		'SSLConstants',
+		'SSLTypedef'
 	],
 	#category : 'LibSsl-Base',
 	#package : 'LibSsl',

@@ -1,0 +1,318 @@
+Class {
+	#name : 'SSLConstantsPkcs7err',
+	#superclass : 'SharedPool',
+	#classVars : [
+		'PKCS7_R_CERTIFICATE_VERIFY_ERROR',
+		'PKCS7_R_CIPHER_HAS_NO_OBJECT_IDENTIFIER',
+		'PKCS7_R_CIPHER_NOT_INITIALIZED',
+		'PKCS7_R_CONTENT_AND_DATA_PRESENT',
+		'PKCS7_R_CTRL_ERROR',
+		'PKCS7_R_DECRYPT_ERROR',
+		'PKCS7_R_DIGEST_FAILURE',
+		'PKCS7_R_ENCRYPTION_CTRL_FAILURE',
+		'PKCS7_R_ENCRYPTION_NOT_SUPPORTED_FOR_THIS_KEY_TYPE',
+		'PKCS7_R_ERROR_ADDING_RECIPIENT',
+		'PKCS7_R_ERROR_SETTING_CIPHER',
+		'PKCS7_R_INVALID_NULL_POINTER',
+		'PKCS7_R_INVALID_SIGNED_DATA_TYPE',
+		'PKCS7_R_NO_CONTENT',
+		'PKCS7_R_NO_DEFAULT_DIGEST',
+		'PKCS7_R_NO_MATCHING_DIGEST_TYPE_FOUND',
+		'PKCS7_R_NO_RECIPIENT_MATCHES_CERTIFICATE',
+		'PKCS7_R_NO_SIGNATURES_ON_DATA',
+		'PKCS7_R_NO_SIGNERS',
+		'PKCS7_R_OPERATION_NOT_SUPPORTED_ON_THIS_TYPE',
+		'PKCS7_R_PKCS7_ADD_SIGNATURE_ERROR',
+		'PKCS7_R_PKCS7_ADD_SIGNER_ERROR',
+		'PKCS7_R_PKCS7_DATASIGN',
+		'PKCS7_R_PRIVATE_KEY_DOES_NOT_MATCH_CERTIFICATE',
+		'PKCS7_R_SIGNATURE_FAILURE',
+		'PKCS7_R_SIGNER_CERTIFICATE_NOT_FOUND',
+		'PKCS7_R_SIGNING_CTRL_FAILURE',
+		'PKCS7_R_SIGNING_NOT_SUPPORTED_FOR_THIS_KEY_TYPE',
+		'PKCS7_R_SMIME_TEXT_ERROR',
+		'PKCS7_R_UNABLE_TO_FIND_CERTIFICATE',
+		'PKCS7_R_UNABLE_TO_FIND_MEM_BIO',
+		'PKCS7_R_UNABLE_TO_FIND_MESSAGE_DIGEST',
+		'PKCS7_R_UNKNOWN_DIGEST_TYPE',
+		'PKCS7_R_UNKNOWN_OPERATION',
+		'PKCS7_R_UNSUPPORTED_CIPHER_TYPE',
+		'PKCS7_R_UNSUPPORTED_CONTENT_TYPE',
+		'PKCS7_R_WRONG_CONTENT_TYPE',
+		'PKCS7_R_WRONG_PKCS7_TYPE'
+	],
+	#category : 'LibSsl-Library',
+	#package : 'LibSsl',
+	#tag : 'Library'
+}
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_CERTIFICATE_VERIFY_ERROR [
+
+	^ PKCS7_R_CERTIFICATE_VERIFY_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_CIPHER_HAS_NO_OBJECT_IDENTIFIER [
+
+	^ PKCS7_R_CIPHER_HAS_NO_OBJECT_IDENTIFIER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_CIPHER_NOT_INITIALIZED [
+
+	^ PKCS7_R_CIPHER_NOT_INITIALIZED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_CONTENT_AND_DATA_PRESENT [
+
+	^ PKCS7_R_CONTENT_AND_DATA_PRESENT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_CTRL_ERROR [
+
+	^ PKCS7_R_CTRL_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_DECRYPT_ERROR [
+
+	^ PKCS7_R_DECRYPT_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_DIGEST_FAILURE [
+
+	^ PKCS7_R_DIGEST_FAILURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_ENCRYPTION_CTRL_FAILURE [
+
+	^ PKCS7_R_ENCRYPTION_CTRL_FAILURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_ENCRYPTION_NOT_SUPPORTED_FOR_THIS_KEY_TYPE [
+
+	^ PKCS7_R_ENCRYPTION_NOT_SUPPORTED_FOR_THIS_KEY_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_ERROR_ADDING_RECIPIENT [
+
+	^ PKCS7_R_ERROR_ADDING_RECIPIENT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_ERROR_SETTING_CIPHER [
+
+	^ PKCS7_R_ERROR_SETTING_CIPHER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_INVALID_NULL_POINTER [
+
+	^ PKCS7_R_INVALID_NULL_POINTER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_INVALID_SIGNED_DATA_TYPE [
+
+	^ PKCS7_R_INVALID_SIGNED_DATA_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_NO_CONTENT [
+
+	^ PKCS7_R_NO_CONTENT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_NO_DEFAULT_DIGEST [
+
+	^ PKCS7_R_NO_DEFAULT_DIGEST
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_NO_MATCHING_DIGEST_TYPE_FOUND [
+
+	^ PKCS7_R_NO_MATCHING_DIGEST_TYPE_FOUND
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_NO_RECIPIENT_MATCHES_CERTIFICATE [
+
+	^ PKCS7_R_NO_RECIPIENT_MATCHES_CERTIFICATE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_NO_SIGNATURES_ON_DATA [
+
+	^ PKCS7_R_NO_SIGNATURES_ON_DATA
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_NO_SIGNERS [
+
+	^ PKCS7_R_NO_SIGNERS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_OPERATION_NOT_SUPPORTED_ON_THIS_TYPE [
+
+	^ PKCS7_R_OPERATION_NOT_SUPPORTED_ON_THIS_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_PKCS7_ADD_SIGNATURE_ERROR [
+
+	^ PKCS7_R_PKCS7_ADD_SIGNATURE_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_PKCS7_ADD_SIGNER_ERROR [
+
+	^ PKCS7_R_PKCS7_ADD_SIGNER_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_PKCS7_DATASIGN [
+
+	^ PKCS7_R_PKCS7_DATASIGN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_PRIVATE_KEY_DOES_NOT_MATCH_CERTIFICATE [
+
+	^ PKCS7_R_PRIVATE_KEY_DOES_NOT_MATCH_CERTIFICATE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_SIGNATURE_FAILURE [
+
+	^ PKCS7_R_SIGNATURE_FAILURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_SIGNER_CERTIFICATE_NOT_FOUND [
+
+	^ PKCS7_R_SIGNER_CERTIFICATE_NOT_FOUND
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_SIGNING_CTRL_FAILURE [
+
+	^ PKCS7_R_SIGNING_CTRL_FAILURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_SIGNING_NOT_SUPPORTED_FOR_THIS_KEY_TYPE [
+
+	^ PKCS7_R_SIGNING_NOT_SUPPORTED_FOR_THIS_KEY_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_SMIME_TEXT_ERROR [
+
+	^ PKCS7_R_SMIME_TEXT_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_UNABLE_TO_FIND_CERTIFICATE [
+
+	^ PKCS7_R_UNABLE_TO_FIND_CERTIFICATE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_UNABLE_TO_FIND_MEM_BIO [
+
+	^ PKCS7_R_UNABLE_TO_FIND_MEM_BIO
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_UNABLE_TO_FIND_MESSAGE_DIGEST [
+
+	^ PKCS7_R_UNABLE_TO_FIND_MESSAGE_DIGEST
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_UNKNOWN_DIGEST_TYPE [
+
+	^ PKCS7_R_UNKNOWN_DIGEST_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_UNKNOWN_OPERATION [
+
+	^ PKCS7_R_UNKNOWN_OPERATION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_UNSUPPORTED_CIPHER_TYPE [
+
+	^ PKCS7_R_UNSUPPORTED_CIPHER_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_UNSUPPORTED_CONTENT_TYPE [
+
+	^ PKCS7_R_UNSUPPORTED_CONTENT_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_WRONG_CONTENT_TYPE [
+
+	^ PKCS7_R_WRONG_CONTENT_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsPkcs7err class >> PKCS7_R_WRONG_PKCS7_TYPE [
+
+	^ PKCS7_R_WRONG_PKCS7_TYPE
+]
+
+{ #category : 'class initialization' }
+SSLConstantsPkcs7err class >> initialize [
+
+	PKCS7_R_CERTIFICATE_VERIFY_ERROR := 16r75.
+	PKCS7_R_CIPHER_HAS_NO_OBJECT_IDENTIFIER := 16r90.
+	PKCS7_R_CIPHER_NOT_INITIALIZED := 16r74.
+	PKCS7_R_CONTENT_AND_DATA_PRESENT := 16r76.
+	PKCS7_R_CTRL_ERROR := 16r98.
+	PKCS7_R_DECRYPT_ERROR := 16r77.
+	PKCS7_R_DIGEST_FAILURE := 16r65.
+	PKCS7_R_ENCRYPTION_CTRL_FAILURE := 16r95.
+	PKCS7_R_ENCRYPTION_NOT_SUPPORTED_FOR_THIS_KEY_TYPE := 16r96.
+	PKCS7_R_ERROR_ADDING_RECIPIENT := 16r78.
+	PKCS7_R_ERROR_SETTING_CIPHER := 16r79.
+	PKCS7_R_INVALID_NULL_POINTER := 16r8F.
+	PKCS7_R_INVALID_SIGNED_DATA_TYPE := 16r9B.
+	PKCS7_R_NO_CONTENT := 16r7A.
+	PKCS7_R_NO_DEFAULT_DIGEST := 16r97.
+	PKCS7_R_NO_MATCHING_DIGEST_TYPE_FOUND := 16r9A.
+	PKCS7_R_NO_RECIPIENT_MATCHES_CERTIFICATE := 16r73.
+	PKCS7_R_NO_SIGNATURES_ON_DATA := 16r7B.
+	PKCS7_R_NO_SIGNERS := 16r8E.
+	PKCS7_R_OPERATION_NOT_SUPPORTED_ON_THIS_TYPE := 16r68.
+	PKCS7_R_PKCS7_ADD_SIGNATURE_ERROR := 16r7C.
+	PKCS7_R_PKCS7_ADD_SIGNER_ERROR := 16r99.
+	PKCS7_R_PKCS7_DATASIGN := 16r91.
+	PKCS7_R_PRIVATE_KEY_DOES_NOT_MATCH_CERTIFICATE := 16r7F.
+	PKCS7_R_SIGNATURE_FAILURE := 16r69.
+	PKCS7_R_SIGNER_CERTIFICATE_NOT_FOUND := 16r80.
+	PKCS7_R_SIGNING_CTRL_FAILURE := 16r93.
+	PKCS7_R_SIGNING_NOT_SUPPORTED_FOR_THIS_KEY_TYPE := 16r94.
+	PKCS7_R_SMIME_TEXT_ERROR := 16r81.
+	PKCS7_R_UNABLE_TO_FIND_CERTIFICATE := 16r6A.
+	PKCS7_R_UNABLE_TO_FIND_MEM_BIO := 16r6B.
+	PKCS7_R_UNABLE_TO_FIND_MESSAGE_DIGEST := 16r6C.
+	PKCS7_R_UNKNOWN_DIGEST_TYPE := 16r6D.
+	PKCS7_R_UNKNOWN_OPERATION := 16r6E.
+	PKCS7_R_UNSUPPORTED_CIPHER_TYPE := 16r6F.
+	PKCS7_R_UNSUPPORTED_CONTENT_TYPE := 16r70.
+	PKCS7_R_WRONG_CONTENT_TYPE := 16r71.
+	PKCS7_R_WRONG_PKCS7_TYPE := 16r72
+]

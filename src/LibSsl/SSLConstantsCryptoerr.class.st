@@ -1,0 +1,262 @@
+Class {
+	#name : 'SSLConstantsCryptoerr',
+	#superclass : 'SharedPool',
+	#classVars : [
+		'CRYPTO_R_BAD_ALGORITHM_NAME',
+		'CRYPTO_R_CONFLICTING_NAMES',
+		'CRYPTO_R_HEX_STRING_TOO_SHORT',
+		'CRYPTO_R_ILLEGAL_HEX_DIGIT',
+		'CRYPTO_R_INSUFFICIENT_DATA_SPACE',
+		'CRYPTO_R_INSUFFICIENT_PARAM_SIZE',
+		'CRYPTO_R_INSUFFICIENT_SECURE_DATA_SPACE',
+		'CRYPTO_R_INTEGER_OVERFLOW',
+		'CRYPTO_R_INVALID_NEGATIVE_VALUE',
+		'CRYPTO_R_INVALID_NULL_ARGUMENT',
+		'CRYPTO_R_INVALID_OSSL_PARAM_TYPE',
+		'CRYPTO_R_NO_PARAMS_TO_MERGE',
+		'CRYPTO_R_NO_SPACE_FOR_TERMINATING_NULL',
+		'CRYPTO_R_ODD_NUMBER_OF_DIGITS',
+		'CRYPTO_R_PARAM_CANNOT_BE_REPRESENTED_EXACTLY',
+		'CRYPTO_R_PARAM_NOT_INTEGER_TYPE',
+		'CRYPTO_R_PARAM_OF_INCOMPATIBLE_TYPE',
+		'CRYPTO_R_PARAM_UNSIGNED_INTEGER_NEGATIVE_VALUE_UNSUPPORTED',
+		'CRYPTO_R_PARAM_UNSUPPORTED_FLOATING_POINT_FORMAT',
+		'CRYPTO_R_PARAM_VALUE_TOO_LARGE_FOR_DESTINATION',
+		'CRYPTO_R_PROVIDER_ALREADY_EXISTS',
+		'CRYPTO_R_PROVIDER_SECTION_ERROR',
+		'CRYPTO_R_RANDOM_SECTION_ERROR',
+		'CRYPTO_R_SECURE_MALLOC_FAILURE',
+		'CRYPTO_R_STRING_TOO_LONG',
+		'CRYPTO_R_TOO_MANY_BYTES',
+		'CRYPTO_R_TOO_MANY_NAMES',
+		'CRYPTO_R_TOO_MANY_RECORDS',
+		'CRYPTO_R_TOO_SMALL_BUFFER',
+		'CRYPTO_R_UNKNOWN_NAME_IN_RANDOM_SECTION',
+		'CRYPTO_R_ZERO_LENGTH_NUMBER'
+	],
+	#category : 'LibSsl-Library',
+	#package : 'LibSsl',
+	#tag : 'Library'
+}
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_BAD_ALGORITHM_NAME [
+
+	^ CRYPTO_R_BAD_ALGORITHM_NAME
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_CONFLICTING_NAMES [
+
+	^ CRYPTO_R_CONFLICTING_NAMES
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_HEX_STRING_TOO_SHORT [
+
+	^ CRYPTO_R_HEX_STRING_TOO_SHORT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_ILLEGAL_HEX_DIGIT [
+
+	^ CRYPTO_R_ILLEGAL_HEX_DIGIT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_INSUFFICIENT_DATA_SPACE [
+
+	^ CRYPTO_R_INSUFFICIENT_DATA_SPACE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_INSUFFICIENT_PARAM_SIZE [
+
+	^ CRYPTO_R_INSUFFICIENT_PARAM_SIZE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_INSUFFICIENT_SECURE_DATA_SPACE [
+
+	^ CRYPTO_R_INSUFFICIENT_SECURE_DATA_SPACE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_INTEGER_OVERFLOW [
+
+	^ CRYPTO_R_INTEGER_OVERFLOW
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_INVALID_NEGATIVE_VALUE [
+
+	^ CRYPTO_R_INVALID_NEGATIVE_VALUE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_INVALID_NULL_ARGUMENT [
+
+	^ CRYPTO_R_INVALID_NULL_ARGUMENT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_INVALID_OSSL_PARAM_TYPE [
+
+	^ CRYPTO_R_INVALID_OSSL_PARAM_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_NO_PARAMS_TO_MERGE [
+
+	^ CRYPTO_R_NO_PARAMS_TO_MERGE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_NO_SPACE_FOR_TERMINATING_NULL [
+
+	^ CRYPTO_R_NO_SPACE_FOR_TERMINATING_NULL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_ODD_NUMBER_OF_DIGITS [
+
+	^ CRYPTO_R_ODD_NUMBER_OF_DIGITS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_PARAM_CANNOT_BE_REPRESENTED_EXACTLY [
+
+	^ CRYPTO_R_PARAM_CANNOT_BE_REPRESENTED_EXACTLY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_PARAM_NOT_INTEGER_TYPE [
+
+	^ CRYPTO_R_PARAM_NOT_INTEGER_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_PARAM_OF_INCOMPATIBLE_TYPE [
+
+	^ CRYPTO_R_PARAM_OF_INCOMPATIBLE_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_PARAM_UNSIGNED_INTEGER_NEGATIVE_VALUE_UNSUPPORTED [
+
+	^ CRYPTO_R_PARAM_UNSIGNED_INTEGER_NEGATIVE_VALUE_UNSUPPORTED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_PARAM_UNSUPPORTED_FLOATING_POINT_FORMAT [
+
+	^ CRYPTO_R_PARAM_UNSUPPORTED_FLOATING_POINT_FORMAT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_PARAM_VALUE_TOO_LARGE_FOR_DESTINATION [
+
+	^ CRYPTO_R_PARAM_VALUE_TOO_LARGE_FOR_DESTINATION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_PROVIDER_ALREADY_EXISTS [
+
+	^ CRYPTO_R_PROVIDER_ALREADY_EXISTS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_PROVIDER_SECTION_ERROR [
+
+	^ CRYPTO_R_PROVIDER_SECTION_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_RANDOM_SECTION_ERROR [
+
+	^ CRYPTO_R_RANDOM_SECTION_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_SECURE_MALLOC_FAILURE [
+
+	^ CRYPTO_R_SECURE_MALLOC_FAILURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_STRING_TOO_LONG [
+
+	^ CRYPTO_R_STRING_TOO_LONG
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_TOO_MANY_BYTES [
+
+	^ CRYPTO_R_TOO_MANY_BYTES
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_TOO_MANY_NAMES [
+
+	^ CRYPTO_R_TOO_MANY_NAMES
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_TOO_MANY_RECORDS [
+
+	^ CRYPTO_R_TOO_MANY_RECORDS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_TOO_SMALL_BUFFER [
+
+	^ CRYPTO_R_TOO_SMALL_BUFFER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_UNKNOWN_NAME_IN_RANDOM_SECTION [
+
+	^ CRYPTO_R_UNKNOWN_NAME_IN_RANDOM_SECTION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsCryptoerr class >> CRYPTO_R_ZERO_LENGTH_NUMBER [
+
+	^ CRYPTO_R_ZERO_LENGTH_NUMBER
+]
+
+{ #category : 'class initialization' }
+SSLConstantsCryptoerr class >> initialize [
+
+	CRYPTO_R_BAD_ALGORITHM_NAME := 16r75.
+	CRYPTO_R_CONFLICTING_NAMES := 16r76.
+	CRYPTO_R_HEX_STRING_TOO_SHORT := 16r79.
+	CRYPTO_R_ILLEGAL_HEX_DIGIT := 16r66.
+	CRYPTO_R_INSUFFICIENT_DATA_SPACE := 16r6A.
+	CRYPTO_R_INSUFFICIENT_PARAM_SIZE := 16r6B.
+	CRYPTO_R_INSUFFICIENT_SECURE_DATA_SPACE := 16r6C.
+	CRYPTO_R_INTEGER_OVERFLOW := 16r7F.
+	CRYPTO_R_INVALID_NEGATIVE_VALUE := 16r7A.
+	CRYPTO_R_INVALID_NULL_ARGUMENT := 16r6D.
+	CRYPTO_R_INVALID_OSSL_PARAM_TYPE := 16r6E.
+	CRYPTO_R_NO_PARAMS_TO_MERGE := 16r83.
+	CRYPTO_R_NO_SPACE_FOR_TERMINATING_NULL := 16r80.
+	CRYPTO_R_ODD_NUMBER_OF_DIGITS := 16r67.
+	CRYPTO_R_PARAM_CANNOT_BE_REPRESENTED_EXACTLY := 16r7B.
+	CRYPTO_R_PARAM_NOT_INTEGER_TYPE := 16r7C.
+	CRYPTO_R_PARAM_OF_INCOMPATIBLE_TYPE := 16r81.
+	CRYPTO_R_PARAM_UNSIGNED_INTEGER_NEGATIVE_VALUE_UNSUPPORTED := 16r7D.
+	CRYPTO_R_PARAM_UNSUPPORTED_FLOATING_POINT_FORMAT := 16r82.
+	CRYPTO_R_PARAM_VALUE_TOO_LARGE_FOR_DESTINATION := 16r7E.
+	CRYPTO_R_PROVIDER_ALREADY_EXISTS := 16r68.
+	CRYPTO_R_PROVIDER_SECTION_ERROR := 16r69.
+	CRYPTO_R_RANDOM_SECTION_ERROR := 16r77.
+	CRYPTO_R_SECURE_MALLOC_FAILURE := 16r6F.
+	CRYPTO_R_STRING_TOO_LONG := 16r70.
+	CRYPTO_R_TOO_MANY_BYTES := 16r71.
+	CRYPTO_R_TOO_MANY_NAMES := 16r84.
+	CRYPTO_R_TOO_MANY_RECORDS := 16r72.
+	CRYPTO_R_TOO_SMALL_BUFFER := 16r74.
+	CRYPTO_R_UNKNOWN_NAME_IN_RANDOM_SECTION := 16r78.
+	CRYPTO_R_ZERO_LENGTH_NUMBER := 16r73
+]

@@ -1,0 +1,590 @@
+Class {
+	#name : 'SSLConstantsX509v3err',
+	#superclass : 'SharedPool',
+	#classVars : [
+		'X509V3_R_BAD_IP_ADDRESS',
+		'X509V3_R_BAD_OBJECT',
+		'X509V3_R_BAD_OPTION',
+		'X509V3_R_BAD_VALUE',
+		'X509V3_R_BN_DEC2BN_ERROR',
+		'X509V3_R_BN_TO_ASN1_INTEGER_ERROR',
+		'X509V3_R_DIRNAME_ERROR',
+		'X509V3_R_DISTPOINT_ALREADY_SET',
+		'X509V3_R_DUPLICATE_ZONE_ID',
+		'X509V3_R_EMPTY_KEY_USAGE',
+		'X509V3_R_ERROR_CONVERTING_ZONE',
+		'X509V3_R_ERROR_CREATING_EXTENSION',
+		'X509V3_R_ERROR_IN_EXTENSION',
+		'X509V3_R_EXPECTED_A_SECTION_NAME',
+		'X509V3_R_EXTENSION_EXISTS',
+		'X509V3_R_EXTENSION_NAME_ERROR',
+		'X509V3_R_EXTENSION_NOT_FOUND',
+		'X509V3_R_EXTENSION_SETTING_NOT_SUPPORTED',
+		'X509V3_R_EXTENSION_VALUE_ERROR',
+		'X509V3_R_ILLEGAL_EMPTY_EXTENSION',
+		'X509V3_R_INCORRECT_POLICY_SYNTAX_TAG',
+		'X509V3_R_INVALID_ASNUMBER',
+		'X509V3_R_INVALID_ASRANGE',
+		'X509V3_R_INVALID_BOOLEAN_STRING',
+		'X509V3_R_INVALID_CERTIFICATE',
+		'X509V3_R_INVALID_EMPTY_NAME',
+		'X509V3_R_INVALID_EXTENSION_STRING',
+		'X509V3_R_INVALID_INHERITANCE',
+		'X509V3_R_INVALID_IPADDRESS',
+		'X509V3_R_INVALID_MULTIPLE_RDNS',
+		'X509V3_R_INVALID_NAME',
+		'X509V3_R_INVALID_NULL_ARGUMENT',
+		'X509V3_R_INVALID_NULL_VALUE',
+		'X509V3_R_INVALID_NUMBER',
+		'X509V3_R_INVALID_NUMBERS',
+		'X509V3_R_INVALID_OBJECT_IDENTIFIER',
+		'X509V3_R_INVALID_OPTION',
+		'X509V3_R_INVALID_POLICY_IDENTIFIER',
+		'X509V3_R_INVALID_PROXY_POLICY_SETTING',
+		'X509V3_R_INVALID_PURPOSE',
+		'X509V3_R_INVALID_SAFI',
+		'X509V3_R_INVALID_SECTION',
+		'X509V3_R_INVALID_SYNTAX',
+		'X509V3_R_ISSUER_DECODE_ERROR',
+		'X509V3_R_MISSING_VALUE',
+		'X509V3_R_NEED_ORGANIZATION_AND_NUMBERS',
+		'X509V3_R_NEGATIVE_PATHLEN',
+		'X509V3_R_NO_CONFIG_DATABASE',
+		'X509V3_R_NO_ISSUER_CERTIFICATE',
+		'X509V3_R_NO_ISSUER_DETAILS',
+		'X509V3_R_NO_POLICY_IDENTIFIER',
+		'X509V3_R_NO_PROXY_CERT_POLICY_LANGUAGE_DEFINED',
+		'X509V3_R_NO_PUBLIC_KEY',
+		'X509V3_R_NO_SUBJECT_DETAILS',
+		'X509V3_R_OPERATION_NOT_DEFINED',
+		'X509V3_R_OTHERNAME_ERROR',
+		'X509V3_R_POLICY_LANGUAGE_ALREADY_DEFINED',
+		'X509V3_R_POLICY_PATH_LENGTH',
+		'X509V3_R_POLICY_PATH_LENGTH_ALREADY_DEFINED',
+		'X509V3_R_POLICY_WHEN_PROXY_LANGUAGE_REQUIRES_NO_POLICY',
+		'X509V3_R_PURPOSE_NOT_UNIQUE',
+		'X509V3_R_SECTION_NOT_FOUND',
+		'X509V3_R_UNABLE_TO_GET_ISSUER_DETAILS',
+		'X509V3_R_UNABLE_TO_GET_ISSUER_KEYID',
+		'X509V3_R_UNKNOWN_BIT_STRING_ARGUMENT',
+		'X509V3_R_UNKNOWN_EXTENSION',
+		'X509V3_R_UNKNOWN_EXTENSION_NAME',
+		'X509V3_R_UNKNOWN_OPTION',
+		'X509V3_R_UNKNOWN_VALUE',
+		'X509V3_R_UNSUPPORTED_OPTION',
+		'X509V3_R_UNSUPPORTED_TYPE',
+		'X509V3_R_USER_TOO_LONG'
+	],
+	#category : 'LibSsl-Library',
+	#package : 'LibSsl',
+	#tag : 'Library'
+}
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_BAD_IP_ADDRESS [
+
+	^ X509V3_R_BAD_IP_ADDRESS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_BAD_OBJECT [
+
+	^ X509V3_R_BAD_OBJECT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_BAD_OPTION [
+
+	^ X509V3_R_BAD_OPTION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_BAD_VALUE [
+
+	^ X509V3_R_BAD_VALUE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_BN_DEC2BN_ERROR [
+
+	^ X509V3_R_BN_DEC2BN_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_BN_TO_ASN1_INTEGER_ERROR [
+
+	^ X509V3_R_BN_TO_ASN1_INTEGER_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_DIRNAME_ERROR [
+
+	^ X509V3_R_DIRNAME_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_DISTPOINT_ALREADY_SET [
+
+	^ X509V3_R_DISTPOINT_ALREADY_SET
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_DUPLICATE_ZONE_ID [
+
+	^ X509V3_R_DUPLICATE_ZONE_ID
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_EMPTY_KEY_USAGE [
+
+	^ X509V3_R_EMPTY_KEY_USAGE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_ERROR_CONVERTING_ZONE [
+
+	^ X509V3_R_ERROR_CONVERTING_ZONE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_ERROR_CREATING_EXTENSION [
+
+	^ X509V3_R_ERROR_CREATING_EXTENSION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_ERROR_IN_EXTENSION [
+
+	^ X509V3_R_ERROR_IN_EXTENSION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_EXPECTED_A_SECTION_NAME [
+
+	^ X509V3_R_EXPECTED_A_SECTION_NAME
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_EXTENSION_EXISTS [
+
+	^ X509V3_R_EXTENSION_EXISTS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_EXTENSION_NAME_ERROR [
+
+	^ X509V3_R_EXTENSION_NAME_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_EXTENSION_NOT_FOUND [
+
+	^ X509V3_R_EXTENSION_NOT_FOUND
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_EXTENSION_SETTING_NOT_SUPPORTED [
+
+	^ X509V3_R_EXTENSION_SETTING_NOT_SUPPORTED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_EXTENSION_VALUE_ERROR [
+
+	^ X509V3_R_EXTENSION_VALUE_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_ILLEGAL_EMPTY_EXTENSION [
+
+	^ X509V3_R_ILLEGAL_EMPTY_EXTENSION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INCORRECT_POLICY_SYNTAX_TAG [
+
+	^ X509V3_R_INCORRECT_POLICY_SYNTAX_TAG
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_ASNUMBER [
+
+	^ X509V3_R_INVALID_ASNUMBER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_ASRANGE [
+
+	^ X509V3_R_INVALID_ASRANGE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_BOOLEAN_STRING [
+
+	^ X509V3_R_INVALID_BOOLEAN_STRING
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_CERTIFICATE [
+
+	^ X509V3_R_INVALID_CERTIFICATE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_EMPTY_NAME [
+
+	^ X509V3_R_INVALID_EMPTY_NAME
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_EXTENSION_STRING [
+
+	^ X509V3_R_INVALID_EXTENSION_STRING
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_INHERITANCE [
+
+	^ X509V3_R_INVALID_INHERITANCE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_IPADDRESS [
+
+	^ X509V3_R_INVALID_IPADDRESS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_MULTIPLE_RDNS [
+
+	^ X509V3_R_INVALID_MULTIPLE_RDNS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_NAME [
+
+	^ X509V3_R_INVALID_NAME
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_NULL_ARGUMENT [
+
+	^ X509V3_R_INVALID_NULL_ARGUMENT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_NULL_VALUE [
+
+	^ X509V3_R_INVALID_NULL_VALUE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_NUMBER [
+
+	^ X509V3_R_INVALID_NUMBER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_NUMBERS [
+
+	^ X509V3_R_INVALID_NUMBERS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_OBJECT_IDENTIFIER [
+
+	^ X509V3_R_INVALID_OBJECT_IDENTIFIER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_OPTION [
+
+	^ X509V3_R_INVALID_OPTION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_POLICY_IDENTIFIER [
+
+	^ X509V3_R_INVALID_POLICY_IDENTIFIER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_PROXY_POLICY_SETTING [
+
+	^ X509V3_R_INVALID_PROXY_POLICY_SETTING
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_PURPOSE [
+
+	^ X509V3_R_INVALID_PURPOSE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_SAFI [
+
+	^ X509V3_R_INVALID_SAFI
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_SECTION [
+
+	^ X509V3_R_INVALID_SECTION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_INVALID_SYNTAX [
+
+	^ X509V3_R_INVALID_SYNTAX
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_ISSUER_DECODE_ERROR [
+
+	^ X509V3_R_ISSUER_DECODE_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_MISSING_VALUE [
+
+	^ X509V3_R_MISSING_VALUE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_NEED_ORGANIZATION_AND_NUMBERS [
+
+	^ X509V3_R_NEED_ORGANIZATION_AND_NUMBERS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_NEGATIVE_PATHLEN [
+
+	^ X509V3_R_NEGATIVE_PATHLEN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_NO_CONFIG_DATABASE [
+
+	^ X509V3_R_NO_CONFIG_DATABASE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_NO_ISSUER_CERTIFICATE [
+
+	^ X509V3_R_NO_ISSUER_CERTIFICATE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_NO_ISSUER_DETAILS [
+
+	^ X509V3_R_NO_ISSUER_DETAILS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_NO_POLICY_IDENTIFIER [
+
+	^ X509V3_R_NO_POLICY_IDENTIFIER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_NO_PROXY_CERT_POLICY_LANGUAGE_DEFINED [
+
+	^ X509V3_R_NO_PROXY_CERT_POLICY_LANGUAGE_DEFINED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_NO_PUBLIC_KEY [
+
+	^ X509V3_R_NO_PUBLIC_KEY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_NO_SUBJECT_DETAILS [
+
+	^ X509V3_R_NO_SUBJECT_DETAILS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_OPERATION_NOT_DEFINED [
+
+	^ X509V3_R_OPERATION_NOT_DEFINED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_OTHERNAME_ERROR [
+
+	^ X509V3_R_OTHERNAME_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_POLICY_LANGUAGE_ALREADY_DEFINED [
+
+	^ X509V3_R_POLICY_LANGUAGE_ALREADY_DEFINED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_POLICY_PATH_LENGTH [
+
+	^ X509V3_R_POLICY_PATH_LENGTH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_POLICY_PATH_LENGTH_ALREADY_DEFINED [
+
+	^ X509V3_R_POLICY_PATH_LENGTH_ALREADY_DEFINED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_POLICY_WHEN_PROXY_LANGUAGE_REQUIRES_NO_POLICY [
+
+	^ X509V3_R_POLICY_WHEN_PROXY_LANGUAGE_REQUIRES_NO_POLICY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_PURPOSE_NOT_UNIQUE [
+
+	^ X509V3_R_PURPOSE_NOT_UNIQUE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_SECTION_NOT_FOUND [
+
+	^ X509V3_R_SECTION_NOT_FOUND
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_UNABLE_TO_GET_ISSUER_DETAILS [
+
+	^ X509V3_R_UNABLE_TO_GET_ISSUER_DETAILS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_UNABLE_TO_GET_ISSUER_KEYID [
+
+	^ X509V3_R_UNABLE_TO_GET_ISSUER_KEYID
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_UNKNOWN_BIT_STRING_ARGUMENT [
+
+	^ X509V3_R_UNKNOWN_BIT_STRING_ARGUMENT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_UNKNOWN_EXTENSION [
+
+	^ X509V3_R_UNKNOWN_EXTENSION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_UNKNOWN_EXTENSION_NAME [
+
+	^ X509V3_R_UNKNOWN_EXTENSION_NAME
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_UNKNOWN_OPTION [
+
+	^ X509V3_R_UNKNOWN_OPTION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_UNKNOWN_VALUE [
+
+	^ X509V3_R_UNKNOWN_VALUE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_UNSUPPORTED_OPTION [
+
+	^ X509V3_R_UNSUPPORTED_OPTION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_UNSUPPORTED_TYPE [
+
+	^ X509V3_R_UNSUPPORTED_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509v3err class >> X509V3_R_USER_TOO_LONG [
+
+	^ X509V3_R_USER_TOO_LONG
+]
+
+{ #category : 'class initialization' }
+SSLConstantsX509v3err class >> initialize [
+
+	X509V3_R_BAD_IP_ADDRESS := 16r76.
+	X509V3_R_BAD_OBJECT := 16r77.
+	X509V3_R_BAD_OPTION := 16rAA.
+	X509V3_R_BAD_VALUE := 16rAB.
+	X509V3_R_BN_DEC2BN_ERROR := 16r64.
+	X509V3_R_BN_TO_ASN1_INTEGER_ERROR := 16r65.
+	X509V3_R_DIRNAME_ERROR := 16r95.
+	X509V3_R_DISTPOINT_ALREADY_SET := 16rA0.
+	X509V3_R_DUPLICATE_ZONE_ID := 16r85.
+	X509V3_R_EMPTY_KEY_USAGE := 16rA9.
+	X509V3_R_ERROR_CONVERTING_ZONE := 16r83.
+	X509V3_R_ERROR_CREATING_EXTENSION := 16r90.
+	X509V3_R_ERROR_IN_EXTENSION := 16r80.
+	X509V3_R_EXPECTED_A_SECTION_NAME := 16r89.
+	X509V3_R_EXTENSION_EXISTS := 16r91.
+	X509V3_R_EXTENSION_NAME_ERROR := 16r73.
+	X509V3_R_EXTENSION_NOT_FOUND := 16r66.
+	X509V3_R_EXTENSION_SETTING_NOT_SUPPORTED := 16r67.
+	X509V3_R_EXTENSION_VALUE_ERROR := 16r74.
+	X509V3_R_ILLEGAL_EMPTY_EXTENSION := 16r97.
+	X509V3_R_INCORRECT_POLICY_SYNTAX_TAG := 16r98.
+	X509V3_R_INVALID_ASNUMBER := 16rA2.
+	X509V3_R_INVALID_ASRANGE := 16rA3.
+	X509V3_R_INVALID_BOOLEAN_STRING := 16r68.
+	X509V3_R_INVALID_CERTIFICATE := 16r9E.
+	X509V3_R_INVALID_EMPTY_NAME := 16r6C.
+	X509V3_R_INVALID_EXTENSION_STRING := 16r69.
+	X509V3_R_INVALID_INHERITANCE := 16rA5.
+	X509V3_R_INVALID_IPADDRESS := 16rA6.
+	X509V3_R_INVALID_MULTIPLE_RDNS := 16rA1.
+	X509V3_R_INVALID_NAME := 16r6A.
+	X509V3_R_INVALID_NULL_ARGUMENT := 16r6B.
+	X509V3_R_INVALID_NULL_VALUE := 16r6D.
+	X509V3_R_INVALID_NUMBER := 16r8C.
+	X509V3_R_INVALID_NUMBERS := 16r8D.
+	X509V3_R_INVALID_OBJECT_IDENTIFIER := 16r6E.
+	X509V3_R_INVALID_OPTION := 16r8A.
+	X509V3_R_INVALID_POLICY_IDENTIFIER := 16r86.
+	X509V3_R_INVALID_PROXY_POLICY_SETTING := 16r99.
+	X509V3_R_INVALID_PURPOSE := 16r92.
+	X509V3_R_INVALID_SAFI := 16rA4.
+	X509V3_R_INVALID_SECTION := 16r87.
+	X509V3_R_INVALID_SYNTAX := 16r8F.
+	X509V3_R_ISSUER_DECODE_ERROR := 16r7E.
+	X509V3_R_MISSING_VALUE := 16r7C.
+	X509V3_R_NEED_ORGANIZATION_AND_NUMBERS := 16r8E.
+	X509V3_R_NEGATIVE_PATHLEN := 16rA8.
+	X509V3_R_NO_CONFIG_DATABASE := 16r88.
+	X509V3_R_NO_ISSUER_CERTIFICATE := 16r79.
+	X509V3_R_NO_ISSUER_DETAILS := 16r7F.
+	X509V3_R_NO_POLICY_IDENTIFIER := 16r8B.
+	X509V3_R_NO_PROXY_CERT_POLICY_LANGUAGE_DEFINED := 16r9A.
+	X509V3_R_NO_PUBLIC_KEY := 16r72.
+	X509V3_R_NO_SUBJECT_DETAILS := 16r7D.
+	X509V3_R_OPERATION_NOT_DEFINED := 16r94.
+	X509V3_R_OTHERNAME_ERROR := 16r93.
+	X509V3_R_POLICY_LANGUAGE_ALREADY_DEFINED := 16r9B.
+	X509V3_R_POLICY_PATH_LENGTH := 16r9C.
+	X509V3_R_POLICY_PATH_LENGTH_ALREADY_DEFINED := 16r9D.
+	X509V3_R_POLICY_WHEN_PROXY_LANGUAGE_REQUIRES_NO_POLICY := 16r9F.
+	X509V3_R_PURPOSE_NOT_UNIQUE := 16rAD.
+	X509V3_R_SECTION_NOT_FOUND := 16r96.
+	X509V3_R_UNABLE_TO_GET_ISSUER_DETAILS := 16r7A.
+	X509V3_R_UNABLE_TO_GET_ISSUER_KEYID := 16r7B.
+	X509V3_R_UNKNOWN_BIT_STRING_ARGUMENT := 16r6F.
+	X509V3_R_UNKNOWN_EXTENSION := 16r81.
+	X509V3_R_UNKNOWN_EXTENSION_NAME := 16r82.
+	X509V3_R_UNKNOWN_OPTION := 16r78.
+	X509V3_R_UNKNOWN_VALUE := 16rAC.
+	X509V3_R_UNSUPPORTED_OPTION := 16r75.
+	X509V3_R_UNSUPPORTED_TYPE := 16rA7.
+	X509V3_R_USER_TOO_LONG := 16r84
+]

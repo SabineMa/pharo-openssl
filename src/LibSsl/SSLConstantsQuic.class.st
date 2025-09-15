@@ -1,0 +1,175 @@
+Class {
+	#name : 'SSLConstantsQuic',
+	#superclass : 'SharedPool',
+	#classVars : [
+		'OSSL_QUIC_ERR_AEAD_LIMIT_REACHED',
+		'OSSL_QUIC_ERR_APPLICATION_ERROR',
+		'OSSL_QUIC_ERR_CONNECTION_ID_LIMIT_ERROR',
+		'OSSL_QUIC_ERR_CONNECTION_REFUSED',
+		'OSSL_QUIC_ERR_CRYPTO_BUFFER_EXCEEDED',
+		'OSSL_QUIC_ERR_CRYPTO_ERR_BEGIN',
+		'OSSL_QUIC_ERR_CRYPTO_ERR_END',
+		'OSSL_QUIC_ERR_FINAL_SIZE_ERROR',
+		'OSSL_QUIC_ERR_FLOW_CONTROL_ERROR',
+		'OSSL_QUIC_ERR_FRAME_ENCODING_ERROR',
+		'OSSL_QUIC_ERR_INTERNAL_ERROR',
+		'OSSL_QUIC_ERR_INVALID_TOKEN',
+		'OSSL_QUIC_ERR_KEY_UPDATE_ERROR',
+		'OSSL_QUIC_ERR_NO_ERROR',
+		'OSSL_QUIC_ERR_NO_VIABLE_PATH',
+		'OSSL_QUIC_ERR_PROTOCOL_VIOLATION',
+		'OSSL_QUIC_ERR_STREAM_LIMIT_ERROR',
+		'OSSL_QUIC_ERR_STREAM_STATE_ERROR',
+		'OSSL_QUIC_ERR_TRANSPORT_PARAMETER_ERROR',
+		'OSSL_QUIC_LOCAL_ERR_IDLE_TIMEOUT'
+	],
+	#category : 'LibSsl-Library',
+	#package : 'LibSsl',
+	#tag : 'Library'
+}
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_AEAD_LIMIT_REACHED [
+
+	^ OSSL_QUIC_ERR_AEAD_LIMIT_REACHED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_APPLICATION_ERROR [
+
+	^ OSSL_QUIC_ERR_APPLICATION_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_CONNECTION_ID_LIMIT_ERROR [
+
+	^ OSSL_QUIC_ERR_CONNECTION_ID_LIMIT_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_CONNECTION_REFUSED [
+
+	^ OSSL_QUIC_ERR_CONNECTION_REFUSED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_CRYPTO_BUFFER_EXCEEDED [
+
+	^ OSSL_QUIC_ERR_CRYPTO_BUFFER_EXCEEDED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_CRYPTO_ERR_BEGIN [
+
+	^ OSSL_QUIC_ERR_CRYPTO_ERR_BEGIN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_CRYPTO_ERR_END [
+
+	^ OSSL_QUIC_ERR_CRYPTO_ERR_END
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_FINAL_SIZE_ERROR [
+
+	^ OSSL_QUIC_ERR_FINAL_SIZE_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_FLOW_CONTROL_ERROR [
+
+	^ OSSL_QUIC_ERR_FLOW_CONTROL_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_FRAME_ENCODING_ERROR [
+
+	^ OSSL_QUIC_ERR_FRAME_ENCODING_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_INTERNAL_ERROR [
+
+	^ OSSL_QUIC_ERR_INTERNAL_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_INVALID_TOKEN [
+
+	^ OSSL_QUIC_ERR_INVALID_TOKEN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_KEY_UPDATE_ERROR [
+
+	^ OSSL_QUIC_ERR_KEY_UPDATE_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_NO_ERROR [
+
+	^ OSSL_QUIC_ERR_NO_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_NO_VIABLE_PATH [
+
+	^ OSSL_QUIC_ERR_NO_VIABLE_PATH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_PROTOCOL_VIOLATION [
+
+	^ OSSL_QUIC_ERR_PROTOCOL_VIOLATION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_STREAM_LIMIT_ERROR [
+
+	^ OSSL_QUIC_ERR_STREAM_LIMIT_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_STREAM_STATE_ERROR [
+
+	^ OSSL_QUIC_ERR_STREAM_STATE_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_ERR_TRANSPORT_PARAMETER_ERROR [
+
+	^ OSSL_QUIC_ERR_TRANSPORT_PARAMETER_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsQuic class >> OSSL_QUIC_LOCAL_ERR_IDLE_TIMEOUT [
+
+	^ OSSL_QUIC_LOCAL_ERR_IDLE_TIMEOUT
+]
+
+{ #category : 'class initialization' }
+SSLConstantsQuic class >> initialize [
+
+	OSSL_QUIC_ERR_NO_ERROR := 16r00.
+	OSSL_QUIC_ERR_INTERNAL_ERROR := 16r01.
+	OSSL_QUIC_ERR_CONNECTION_REFUSED := 16r02.
+	OSSL_QUIC_ERR_FLOW_CONTROL_ERROR := 16r03.
+	OSSL_QUIC_ERR_STREAM_LIMIT_ERROR := 16r04.
+	OSSL_QUIC_ERR_STREAM_STATE_ERROR := 16r05.
+	OSSL_QUIC_ERR_FINAL_SIZE_ERROR := 16r06.
+	OSSL_QUIC_ERR_FRAME_ENCODING_ERROR := 16r07.
+	OSSL_QUIC_ERR_TRANSPORT_PARAMETER_ERROR := 16r08.
+	OSSL_QUIC_ERR_CONNECTION_ID_LIMIT_ERROR := 16r09.
+	OSSL_QUIC_ERR_PROTOCOL_VIOLATION := 16r0A.
+	OSSL_QUIC_ERR_INVALID_TOKEN := 16r0B.
+	OSSL_QUIC_ERR_APPLICATION_ERROR := 16r0C.
+	OSSL_QUIC_ERR_CRYPTO_BUFFER_EXCEEDED := 16r0D.
+	OSSL_QUIC_ERR_KEY_UPDATE_ERROR := 16r0E.
+	OSSL_QUIC_ERR_AEAD_LIMIT_REACHED := 16r0F.
+	OSSL_QUIC_ERR_NO_VIABLE_PATH := 16r10.
+	OSSL_QUIC_ERR_CRYPTO_ERR_BEGIN := 16r0100.
+	OSSL_QUIC_ERR_CRYPTO_ERR_END := 16r01FF.
+	OSSL_QUIC_LOCAL_ERR_IDLE_TIMEOUT := 16rFFFFFFFFFFFFFFFF	 "\
+    ((uint64_t)0xFFFFFFFFFFFFFFFFULL)"
+]

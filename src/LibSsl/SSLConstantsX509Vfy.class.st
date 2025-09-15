@@ -1,0 +1,1265 @@
+Class {
+	#name : 'SSLConstantsX509Vfy',
+	#superclass : 'SharedPool',
+	#classVars : [
+		'DANE_FLAG_NO_DANE_EE_NAMECHECKS',
+		'X509_LU_FAIL',
+		'X509_LU_RETRY',
+		'X509_L_ADD_DIR',
+		'X509_L_ADD_STORE',
+		'X509_L_FILE_LOAD',
+		'X509_L_LOAD_STORE',
+		'X509_PCY_TREE_EMPTY',
+		'X509_PCY_TREE_EXPLICIT',
+		'X509_PCY_TREE_FAILURE',
+		'X509_PCY_TREE_INTERNAL',
+		'X509_PCY_TREE_INVALID',
+		'X509_PCY_TREE_VALID',
+		'X509_TRUST_COMPAT',
+		'X509_TRUST_DEFAULT',
+		'X509_TRUST_DO_SS_COMPAT',
+		'X509_TRUST_DYNAMIC',
+		'X509_TRUST_DYNAMIC_NAME',
+		'X509_TRUST_EMAIL',
+		'X509_TRUST_MAX',
+		'X509_TRUST_MIN',
+		'X509_TRUST_NO_SS_COMPAT',
+		'X509_TRUST_OBJECT_SIGN',
+		'X509_TRUST_OCSP_REQUEST',
+		'X509_TRUST_OCSP_SIGN',
+		'X509_TRUST_OK_ANY_EKU',
+		'X509_TRUST_REJECTED',
+		'X509_TRUST_SSL_CLIENT',
+		'X509_TRUST_SSL_SERVER',
+		'X509_TRUST_TRUSTED',
+		'X509_TRUST_TSA',
+		'X509_TRUST_UNTRUSTED',
+		'X509_VP_FLAG_DEFAULT',
+		'X509_VP_FLAG_LOCKED',
+		'X509_VP_FLAG_ONCE',
+		'X509_VP_FLAG_OVERWRITE',
+		'X509_VP_FLAG_RESET_FLAGS',
+		'X509_V_ERR_AKID_ISSUER_SERIAL_MISMATCH',
+		'X509_V_ERR_AKID_SKID_MISMATCH',
+		'X509_V_ERR_APPLICATION_VERIFICATION',
+		'X509_V_ERR_AUTHORITY_KEY_IDENTIFIER_CRITICAL',
+		'X509_V_ERR_CA_BCONS_NOT_CRITICAL',
+		'X509_V_ERR_CA_CERT_MISSING_KEY_USAGE',
+		'X509_V_ERR_CA_KEY_TOO_SMALL',
+		'X509_V_ERR_CA_MD_TOO_WEAK',
+		'X509_V_ERR_CERT_CHAIN_TOO_LONG',
+		'X509_V_ERR_CERT_HAS_EXPIRED',
+		'X509_V_ERR_CERT_NOT_YET_VALID',
+		'X509_V_ERR_CERT_REJECTED',
+		'X509_V_ERR_CERT_REVOKED',
+		'X509_V_ERR_CERT_SIGNATURE_FAILURE',
+		'X509_V_ERR_CERT_UNTRUSTED',
+		'X509_V_ERR_CRL_HAS_EXPIRED',
+		'X509_V_ERR_CRL_NOT_YET_VALID',
+		'X509_V_ERR_CRL_PATH_VALIDATION_ERROR',
+		'X509_V_ERR_CRL_SIGNATURE_FAILURE',
+		'X509_V_ERR_DANE_NO_MATCH',
+		'X509_V_ERR_DEPTH_ZERO_SELF_SIGNED_CERT',
+		'X509_V_ERR_DIFFERENT_CRL_SCOPE',
+		'X509_V_ERR_EC_KEY_EXPLICIT_PARAMS',
+		'X509_V_ERR_EE_KEY_TOO_SMALL',
+		'X509_V_ERR_EMAIL_MISMATCH',
+		'X509_V_ERR_EMPTY_SUBJECT_ALT_NAME',
+		'X509_V_ERR_EMPTY_SUBJECT_SAN_NOT_CRITICAL',
+		'X509_V_ERR_ERROR_IN_CERT_NOT_AFTER_FIELD',
+		'X509_V_ERR_ERROR_IN_CERT_NOT_BEFORE_FIELD',
+		'X509_V_ERR_ERROR_IN_CRL_LAST_UPDATE_FIELD',
+		'X509_V_ERR_ERROR_IN_CRL_NEXT_UPDATE_FIELD',
+		'X509_V_ERR_EXCLUDED_VIOLATION',
+		'X509_V_ERR_EXTENSIONS_REQUIRE_VERSION_3',
+		'X509_V_ERR_HOSTNAME_MISMATCH',
+		'X509_V_ERR_INVALID_CA',
+		'X509_V_ERR_INVALID_CALL',
+		'X509_V_ERR_INVALID_EXTENSION',
+		'X509_V_ERR_INVALID_NON_CA',
+		'X509_V_ERR_INVALID_POLICY_EXTENSION',
+		'X509_V_ERR_INVALID_PURPOSE',
+		'X509_V_ERR_IP_ADDRESS_MISMATCH',
+		'X509_V_ERR_ISSUER_NAME_EMPTY',
+		'X509_V_ERR_KEYUSAGE_NO_CERTSIGN',
+		'X509_V_ERR_KEYUSAGE_NO_CRL_SIGN',
+		'X509_V_ERR_KEYUSAGE_NO_DIGITAL_SIGNATURE',
+		'X509_V_ERR_KU_KEY_CERT_SIGN_INVALID_FOR_NON_CA',
+		'X509_V_ERR_MISSING_AUTHORITY_KEY_IDENTIFIER',
+		'X509_V_ERR_MISSING_SUBJECT_KEY_IDENTIFIER',
+		'X509_V_ERR_NO_EXPLICIT_POLICY',
+		'X509_V_ERR_NO_ISSUER_PUBLIC_KEY',
+		'X509_V_ERR_NO_VALID_SCTS',
+		'X509_V_ERR_OCSP_CERT_UNKNOWN',
+		'X509_V_ERR_OCSP_VERIFY_FAILED',
+		'X509_V_ERR_OCSP_VERIFY_NEEDED',
+		'X509_V_ERR_OUT_OF_MEM',
+		'X509_V_ERR_PATHLEN_INVALID_FOR_NON_CA',
+		'X509_V_ERR_PATHLEN_WITHOUT_KU_KEY_CERT_SIGN',
+		'X509_V_ERR_PATH_LENGTH_EXCEEDED',
+		'X509_V_ERR_PATH_LOOP',
+		'X509_V_ERR_PERMITTED_VIOLATION',
+		'X509_V_ERR_PROXY_CERTIFICATES_NOT_ALLOWED',
+		'X509_V_ERR_PROXY_PATH_LENGTH_EXCEEDED',
+		'X509_V_ERR_PROXY_SUBJECT_NAME_VIOLATION',
+		'X509_V_ERR_RPK_UNTRUSTED',
+		'X509_V_ERR_SELF_SIGNED_CERT_IN_CHAIN',
+		'X509_V_ERR_SIGNATURE_ALGORITHM_INCONSISTENCY',
+		'X509_V_ERR_SIGNATURE_ALGORITHM_MISMATCH',
+		'X509_V_ERR_STORE_LOOKUP',
+		'X509_V_ERR_SUBJECT_ISSUER_MISMATCH',
+		'X509_V_ERR_SUBJECT_KEY_IDENTIFIER_CRITICAL',
+		'X509_V_ERR_SUBJECT_NAME_EMPTY',
+		'X509_V_ERR_SUBTREE_MINMAX',
+		'X509_V_ERR_SUITE_B_CANNOT_SIGN_P_384_WITH_P_256',
+		'X509_V_ERR_SUITE_B_INVALID_ALGORITHM',
+		'X509_V_ERR_SUITE_B_INVALID_CURVE',
+		'X509_V_ERR_SUITE_B_INVALID_SIGNATURE_ALGORITHM',
+		'X509_V_ERR_SUITE_B_INVALID_VERSION',
+		'X509_V_ERR_SUITE_B_LOS_NOT_ALLOWED',
+		'X509_V_ERR_UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY',
+		'X509_V_ERR_UNABLE_TO_DECRYPT_CERT_SIGNATURE',
+		'X509_V_ERR_UNABLE_TO_DECRYPT_CRL_SIGNATURE',
+		'X509_V_ERR_UNABLE_TO_GET_CRL',
+		'X509_V_ERR_UNABLE_TO_GET_CRL_ISSUER',
+		'X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT',
+		'X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT_LOCALLY',
+		'X509_V_ERR_UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+		'X509_V_ERR_UNHANDLED_CRITICAL_CRL_EXTENSION',
+		'X509_V_ERR_UNHANDLED_CRITICAL_EXTENSION',
+		'X509_V_ERR_UNNESTED_RESOURCE',
+		'X509_V_ERR_UNSPECIFIED',
+		'X509_V_ERR_UNSUPPORTED_CONSTRAINT_SYNTAX',
+		'X509_V_ERR_UNSUPPORTED_CONSTRAINT_TYPE',
+		'X509_V_ERR_UNSUPPORTED_EXTENSION_FEATURE',
+		'X509_V_ERR_UNSUPPORTED_NAME_SYNTAX',
+		'X509_V_ERR_UNSUPPORTED_SIGNATURE_ALGORITHM',
+		'X509_V_FLAG_ALLOW_PROXY_CERTS',
+		'X509_V_FLAG_CB_ISSUER_CHECK',
+		'X509_V_FLAG_CHECK_SS_SIGNATURE',
+		'X509_V_FLAG_CRL_CHECK',
+		'X509_V_FLAG_CRL_CHECK_ALL',
+		'X509_V_FLAG_EXPLICIT_POLICY',
+		'X509_V_FLAG_EXTENDED_CRL_SUPPORT',
+		'X509_V_FLAG_IGNORE_CRITICAL',
+		'X509_V_FLAG_INHIBIT_ANY',
+		'X509_V_FLAG_INHIBIT_MAP',
+		'X509_V_FLAG_NOTIFY_POLICY',
+		'X509_V_FLAG_NO_ALT_CHAINS',
+		'X509_V_FLAG_NO_CHECK_TIME',
+		'X509_V_FLAG_PARTIAL_CHAIN',
+		'X509_V_FLAG_POLICY_CHECK',
+		'X509_V_FLAG_POLICY_MASK',
+		'X509_V_FLAG_SUITEB_128_LOS',
+		'X509_V_FLAG_SUITEB_128_LOS_ONLY',
+		'X509_V_FLAG_SUITEB_192_LOS',
+		'X509_V_FLAG_TRUSTED_FIRST',
+		'X509_V_FLAG_USE_CHECK_TIME',
+		'X509_V_FLAG_USE_DELTAS',
+		'X509_V_FLAG_X509_STRICT',
+		'X509_V_OK'
+	],
+	#category : 'LibSsl-Library',
+	#package : 'LibSsl',
+	#tag : 'Library'
+}
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> DANE_FLAG_NO_DANE_EE_NAMECHECKS [
+
+	^ DANE_FLAG_NO_DANE_EE_NAMECHECKS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_LU_FAIL [
+
+	^ X509_LU_FAIL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_LU_RETRY [
+
+	^ X509_LU_RETRY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_L_ADD_DIR [
+
+	^ X509_L_ADD_DIR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_L_ADD_STORE [
+
+	^ X509_L_ADD_STORE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_L_FILE_LOAD [
+
+	^ X509_L_FILE_LOAD
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_L_LOAD_STORE [
+
+	^ X509_L_LOAD_STORE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_PCY_TREE_EMPTY [
+
+	^ X509_PCY_TREE_EMPTY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_PCY_TREE_EXPLICIT [
+
+	^ X509_PCY_TREE_EXPLICIT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_PCY_TREE_FAILURE [
+
+	^ X509_PCY_TREE_FAILURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_PCY_TREE_INTERNAL [
+
+	^ X509_PCY_TREE_INTERNAL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_PCY_TREE_INVALID [
+
+	^ X509_PCY_TREE_INVALID
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_PCY_TREE_VALID [
+
+	^ X509_PCY_TREE_VALID
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_COMPAT [
+
+	^ X509_TRUST_COMPAT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_DEFAULT [
+
+	^ X509_TRUST_DEFAULT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_DO_SS_COMPAT [
+
+	^ X509_TRUST_DO_SS_COMPAT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_DYNAMIC [
+
+	^ X509_TRUST_DYNAMIC
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_DYNAMIC_NAME [
+
+	^ X509_TRUST_DYNAMIC_NAME
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_EMAIL [
+
+	^ X509_TRUST_EMAIL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_MAX [
+
+	^ X509_TRUST_MAX
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_MIN [
+
+	^ X509_TRUST_MIN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_NO_SS_COMPAT [
+
+	^ X509_TRUST_NO_SS_COMPAT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_OBJECT_SIGN [
+
+	^ X509_TRUST_OBJECT_SIGN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_OCSP_REQUEST [
+
+	^ X509_TRUST_OCSP_REQUEST
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_OCSP_SIGN [
+
+	^ X509_TRUST_OCSP_SIGN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_OK_ANY_EKU [
+
+	^ X509_TRUST_OK_ANY_EKU
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_REJECTED [
+
+	^ X509_TRUST_REJECTED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_SSL_CLIENT [
+
+	^ X509_TRUST_SSL_CLIENT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_SSL_SERVER [
+
+	^ X509_TRUST_SSL_SERVER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_TRUSTED [
+
+	^ X509_TRUST_TRUSTED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_TSA [
+
+	^ X509_TRUST_TSA
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_TRUST_UNTRUSTED [
+
+	^ X509_TRUST_UNTRUSTED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_VP_FLAG_DEFAULT [
+
+	^ X509_VP_FLAG_DEFAULT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_VP_FLAG_LOCKED [
+
+	^ X509_VP_FLAG_LOCKED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_VP_FLAG_ONCE [
+
+	^ X509_VP_FLAG_ONCE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_VP_FLAG_OVERWRITE [
+
+	^ X509_VP_FLAG_OVERWRITE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_VP_FLAG_RESET_FLAGS [
+
+	^ X509_VP_FLAG_RESET_FLAGS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_AKID_ISSUER_SERIAL_MISMATCH [
+
+	^ X509_V_ERR_AKID_ISSUER_SERIAL_MISMATCH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_AKID_SKID_MISMATCH [
+
+	^ X509_V_ERR_AKID_SKID_MISMATCH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_APPLICATION_VERIFICATION [
+
+	^ X509_V_ERR_APPLICATION_VERIFICATION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_AUTHORITY_KEY_IDENTIFIER_CRITICAL [
+
+	^ X509_V_ERR_AUTHORITY_KEY_IDENTIFIER_CRITICAL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CA_BCONS_NOT_CRITICAL [
+
+	^ X509_V_ERR_CA_BCONS_NOT_CRITICAL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CA_CERT_MISSING_KEY_USAGE [
+
+	^ X509_V_ERR_CA_CERT_MISSING_KEY_USAGE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CA_KEY_TOO_SMALL [
+
+	^ X509_V_ERR_CA_KEY_TOO_SMALL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CA_MD_TOO_WEAK [
+
+	^ X509_V_ERR_CA_MD_TOO_WEAK
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CERT_CHAIN_TOO_LONG [
+
+	^ X509_V_ERR_CERT_CHAIN_TOO_LONG
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CERT_HAS_EXPIRED [
+
+	^ X509_V_ERR_CERT_HAS_EXPIRED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CERT_NOT_YET_VALID [
+
+	^ X509_V_ERR_CERT_NOT_YET_VALID
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CERT_REJECTED [
+
+	^ X509_V_ERR_CERT_REJECTED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CERT_REVOKED [
+
+	^ X509_V_ERR_CERT_REVOKED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CERT_SIGNATURE_FAILURE [
+
+	^ X509_V_ERR_CERT_SIGNATURE_FAILURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CERT_UNTRUSTED [
+
+	^ X509_V_ERR_CERT_UNTRUSTED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CRL_HAS_EXPIRED [
+
+	^ X509_V_ERR_CRL_HAS_EXPIRED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CRL_NOT_YET_VALID [
+
+	^ X509_V_ERR_CRL_NOT_YET_VALID
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CRL_PATH_VALIDATION_ERROR [
+
+	^ X509_V_ERR_CRL_PATH_VALIDATION_ERROR
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_CRL_SIGNATURE_FAILURE [
+
+	^ X509_V_ERR_CRL_SIGNATURE_FAILURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_DANE_NO_MATCH [
+
+	^ X509_V_ERR_DANE_NO_MATCH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_DEPTH_ZERO_SELF_SIGNED_CERT [
+
+	^ X509_V_ERR_DEPTH_ZERO_SELF_SIGNED_CERT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_DIFFERENT_CRL_SCOPE [
+
+	^ X509_V_ERR_DIFFERENT_CRL_SCOPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_EC_KEY_EXPLICIT_PARAMS [
+
+	^ X509_V_ERR_EC_KEY_EXPLICIT_PARAMS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_EE_KEY_TOO_SMALL [
+
+	^ X509_V_ERR_EE_KEY_TOO_SMALL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_EMAIL_MISMATCH [
+
+	^ X509_V_ERR_EMAIL_MISMATCH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_EMPTY_SUBJECT_ALT_NAME [
+
+	^ X509_V_ERR_EMPTY_SUBJECT_ALT_NAME
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_EMPTY_SUBJECT_SAN_NOT_CRITICAL [
+
+	^ X509_V_ERR_EMPTY_SUBJECT_SAN_NOT_CRITICAL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_ERROR_IN_CERT_NOT_AFTER_FIELD [
+
+	^ X509_V_ERR_ERROR_IN_CERT_NOT_AFTER_FIELD
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_ERROR_IN_CERT_NOT_BEFORE_FIELD [
+
+	^ X509_V_ERR_ERROR_IN_CERT_NOT_BEFORE_FIELD
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_ERROR_IN_CRL_LAST_UPDATE_FIELD [
+
+	^ X509_V_ERR_ERROR_IN_CRL_LAST_UPDATE_FIELD
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_ERROR_IN_CRL_NEXT_UPDATE_FIELD [
+
+	^ X509_V_ERR_ERROR_IN_CRL_NEXT_UPDATE_FIELD
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_EXCLUDED_VIOLATION [
+
+	^ X509_V_ERR_EXCLUDED_VIOLATION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_EXTENSIONS_REQUIRE_VERSION_3 [
+
+	^ X509_V_ERR_EXTENSIONS_REQUIRE_VERSION_3
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_HOSTNAME_MISMATCH [
+
+	^ X509_V_ERR_HOSTNAME_MISMATCH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_INVALID_CA [
+
+	^ X509_V_ERR_INVALID_CA
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_INVALID_CALL [
+
+	^ X509_V_ERR_INVALID_CALL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_INVALID_EXTENSION [
+
+	^ X509_V_ERR_INVALID_EXTENSION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_INVALID_NON_CA [
+
+	^ X509_V_ERR_INVALID_NON_CA
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_INVALID_POLICY_EXTENSION [
+
+	^ X509_V_ERR_INVALID_POLICY_EXTENSION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_INVALID_PURPOSE [
+
+	^ X509_V_ERR_INVALID_PURPOSE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_IP_ADDRESS_MISMATCH [
+
+	^ X509_V_ERR_IP_ADDRESS_MISMATCH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_ISSUER_NAME_EMPTY [
+
+	^ X509_V_ERR_ISSUER_NAME_EMPTY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_KEYUSAGE_NO_CERTSIGN [
+
+	^ X509_V_ERR_KEYUSAGE_NO_CERTSIGN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_KEYUSAGE_NO_CRL_SIGN [
+
+	^ X509_V_ERR_KEYUSAGE_NO_CRL_SIGN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_KEYUSAGE_NO_DIGITAL_SIGNATURE [
+
+	^ X509_V_ERR_KEYUSAGE_NO_DIGITAL_SIGNATURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_KU_KEY_CERT_SIGN_INVALID_FOR_NON_CA [
+
+	^ X509_V_ERR_KU_KEY_CERT_SIGN_INVALID_FOR_NON_CA
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_MISSING_AUTHORITY_KEY_IDENTIFIER [
+
+	^ X509_V_ERR_MISSING_AUTHORITY_KEY_IDENTIFIER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_MISSING_SUBJECT_KEY_IDENTIFIER [
+
+	^ X509_V_ERR_MISSING_SUBJECT_KEY_IDENTIFIER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_NO_EXPLICIT_POLICY [
+
+	^ X509_V_ERR_NO_EXPLICIT_POLICY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_NO_ISSUER_PUBLIC_KEY [
+
+	^ X509_V_ERR_NO_ISSUER_PUBLIC_KEY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_NO_VALID_SCTS [
+
+	^ X509_V_ERR_NO_VALID_SCTS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_OCSP_CERT_UNKNOWN [
+
+	^ X509_V_ERR_OCSP_CERT_UNKNOWN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_OCSP_VERIFY_FAILED [
+
+	^ X509_V_ERR_OCSP_VERIFY_FAILED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_OCSP_VERIFY_NEEDED [
+
+	^ X509_V_ERR_OCSP_VERIFY_NEEDED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_OUT_OF_MEM [
+
+	^ X509_V_ERR_OUT_OF_MEM
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_PATHLEN_INVALID_FOR_NON_CA [
+
+	^ X509_V_ERR_PATHLEN_INVALID_FOR_NON_CA
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_PATHLEN_WITHOUT_KU_KEY_CERT_SIGN [
+
+	^ X509_V_ERR_PATHLEN_WITHOUT_KU_KEY_CERT_SIGN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_PATH_LENGTH_EXCEEDED [
+
+	^ X509_V_ERR_PATH_LENGTH_EXCEEDED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_PATH_LOOP [
+
+	^ X509_V_ERR_PATH_LOOP
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_PERMITTED_VIOLATION [
+
+	^ X509_V_ERR_PERMITTED_VIOLATION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_PROXY_CERTIFICATES_NOT_ALLOWED [
+
+	^ X509_V_ERR_PROXY_CERTIFICATES_NOT_ALLOWED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_PROXY_PATH_LENGTH_EXCEEDED [
+
+	^ X509_V_ERR_PROXY_PATH_LENGTH_EXCEEDED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_PROXY_SUBJECT_NAME_VIOLATION [
+
+	^ X509_V_ERR_PROXY_SUBJECT_NAME_VIOLATION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_RPK_UNTRUSTED [
+
+	^ X509_V_ERR_RPK_UNTRUSTED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SELF_SIGNED_CERT_IN_CHAIN [
+
+	^ X509_V_ERR_SELF_SIGNED_CERT_IN_CHAIN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SIGNATURE_ALGORITHM_INCONSISTENCY [
+
+	^ X509_V_ERR_SIGNATURE_ALGORITHM_INCONSISTENCY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SIGNATURE_ALGORITHM_MISMATCH [
+
+	^ X509_V_ERR_SIGNATURE_ALGORITHM_MISMATCH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_STORE_LOOKUP [
+
+	^ X509_V_ERR_STORE_LOOKUP
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUBJECT_ISSUER_MISMATCH [
+
+	^ X509_V_ERR_SUBJECT_ISSUER_MISMATCH
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUBJECT_KEY_IDENTIFIER_CRITICAL [
+
+	^ X509_V_ERR_SUBJECT_KEY_IDENTIFIER_CRITICAL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUBJECT_NAME_EMPTY [
+
+	^ X509_V_ERR_SUBJECT_NAME_EMPTY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUBTREE_MINMAX [
+
+	^ X509_V_ERR_SUBTREE_MINMAX
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUITE_B_CANNOT_SIGN_P_384_WITH_P_256 [
+
+	^ X509_V_ERR_SUITE_B_CANNOT_SIGN_P_384_WITH_P_256
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUITE_B_INVALID_ALGORITHM [
+
+	^ X509_V_ERR_SUITE_B_INVALID_ALGORITHM
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUITE_B_INVALID_CURVE [
+
+	^ X509_V_ERR_SUITE_B_INVALID_CURVE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUITE_B_INVALID_SIGNATURE_ALGORITHM [
+
+	^ X509_V_ERR_SUITE_B_INVALID_SIGNATURE_ALGORITHM
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUITE_B_INVALID_VERSION [
+
+	^ X509_V_ERR_SUITE_B_INVALID_VERSION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_SUITE_B_LOS_NOT_ALLOWED [
+
+	^ X509_V_ERR_SUITE_B_LOS_NOT_ALLOWED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY [
+
+	^ X509_V_ERR_UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNABLE_TO_DECRYPT_CERT_SIGNATURE [
+
+	^ X509_V_ERR_UNABLE_TO_DECRYPT_CERT_SIGNATURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNABLE_TO_DECRYPT_CRL_SIGNATURE [
+
+	^ X509_V_ERR_UNABLE_TO_DECRYPT_CRL_SIGNATURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNABLE_TO_GET_CRL [
+
+	^ X509_V_ERR_UNABLE_TO_GET_CRL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNABLE_TO_GET_CRL_ISSUER [
+
+	^ X509_V_ERR_UNABLE_TO_GET_CRL_ISSUER
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT [
+
+	^ X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT_LOCALLY [
+
+	^ X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNABLE_TO_VERIFY_LEAF_SIGNATURE [
+
+	^ X509_V_ERR_UNABLE_TO_VERIFY_LEAF_SIGNATURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNHANDLED_CRITICAL_CRL_EXTENSION [
+
+	^ X509_V_ERR_UNHANDLED_CRITICAL_CRL_EXTENSION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNHANDLED_CRITICAL_EXTENSION [
+
+	^ X509_V_ERR_UNHANDLED_CRITICAL_EXTENSION
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNNESTED_RESOURCE [
+
+	^ X509_V_ERR_UNNESTED_RESOURCE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNSPECIFIED [
+
+	^ X509_V_ERR_UNSPECIFIED
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNSUPPORTED_CONSTRAINT_SYNTAX [
+
+	^ X509_V_ERR_UNSUPPORTED_CONSTRAINT_SYNTAX
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNSUPPORTED_CONSTRAINT_TYPE [
+
+	^ X509_V_ERR_UNSUPPORTED_CONSTRAINT_TYPE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNSUPPORTED_EXTENSION_FEATURE [
+
+	^ X509_V_ERR_UNSUPPORTED_EXTENSION_FEATURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNSUPPORTED_NAME_SYNTAX [
+
+	^ X509_V_ERR_UNSUPPORTED_NAME_SYNTAX
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_ERR_UNSUPPORTED_SIGNATURE_ALGORITHM [
+
+	^ X509_V_ERR_UNSUPPORTED_SIGNATURE_ALGORITHM
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_ALLOW_PROXY_CERTS [
+
+	^ X509_V_FLAG_ALLOW_PROXY_CERTS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_CB_ISSUER_CHECK [
+
+	^ X509_V_FLAG_CB_ISSUER_CHECK
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_CHECK_SS_SIGNATURE [
+
+	^ X509_V_FLAG_CHECK_SS_SIGNATURE
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_CRL_CHECK [
+
+	^ X509_V_FLAG_CRL_CHECK
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_CRL_CHECK_ALL [
+
+	^ X509_V_FLAG_CRL_CHECK_ALL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_EXPLICIT_POLICY [
+
+	^ X509_V_FLAG_EXPLICIT_POLICY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_EXTENDED_CRL_SUPPORT [
+
+	^ X509_V_FLAG_EXTENDED_CRL_SUPPORT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_IGNORE_CRITICAL [
+
+	^ X509_V_FLAG_IGNORE_CRITICAL
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_INHIBIT_ANY [
+
+	^ X509_V_FLAG_INHIBIT_ANY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_INHIBIT_MAP [
+
+	^ X509_V_FLAG_INHIBIT_MAP
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_NOTIFY_POLICY [
+
+	^ X509_V_FLAG_NOTIFY_POLICY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_NO_ALT_CHAINS [
+
+	^ X509_V_FLAG_NO_ALT_CHAINS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_NO_CHECK_TIME [
+
+	^ X509_V_FLAG_NO_CHECK_TIME
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_PARTIAL_CHAIN [
+
+	^ X509_V_FLAG_PARTIAL_CHAIN
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_POLICY_CHECK [
+
+	^ X509_V_FLAG_POLICY_CHECK
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_POLICY_MASK [
+
+	^ X509_V_FLAG_POLICY_MASK
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_SUITEB_128_LOS [
+
+	^ X509_V_FLAG_SUITEB_128_LOS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_SUITEB_128_LOS_ONLY [
+
+	^ X509_V_FLAG_SUITEB_128_LOS_ONLY
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_SUITEB_192_LOS [
+
+	^ X509_V_FLAG_SUITEB_192_LOS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_TRUSTED_FIRST [
+
+	^ X509_V_FLAG_TRUSTED_FIRST
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_USE_CHECK_TIME [
+
+	^ X509_V_FLAG_USE_CHECK_TIME
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_USE_DELTAS [
+
+	^ X509_V_FLAG_USE_DELTAS
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_FLAG_X509_STRICT [
+
+	^ X509_V_FLAG_X509_STRICT
+]
+
+{ #category : 'accessing - constants' }
+SSLConstantsX509Vfy class >> X509_V_OK [
+
+	^ X509_V_OK
+]
+
+{ #category : 'class initialization' }
+SSLConstantsX509Vfy class >> initialize [
+
+	X509_LU_RETRY := -1.
+	X509_LU_FAIL := 0.
+	X509_TRUST_DEFAULT := 0.
+	X509_TRUST_COMPAT := 1.
+	X509_TRUST_SSL_CLIENT := 2.
+	X509_TRUST_SSL_SERVER := 3.
+	X509_TRUST_EMAIL := 4.
+	X509_TRUST_OBJECT_SIGN := 5.
+	X509_TRUST_OCSP_SIGN := 6.
+	X509_TRUST_OCSP_REQUEST := 7.
+	X509_TRUST_TSA := 8.
+	X509_TRUST_MIN := 1.
+	X509_TRUST_MAX := 8.
+	X509_TRUST_DYNAMIC := 1	 "(1U << 0)".
+	X509_TRUST_DYNAMIC_NAME := 2	 "(1U << 1)".
+	X509_TRUST_NO_SS_COMPAT := 4	 "(1U << 2)".
+	X509_TRUST_DO_SS_COMPAT := 8	 "(1U << 3)".
+	X509_TRUST_OK_ANY_EKU := 16r10	 "(1U << 4)".
+	X509_TRUST_TRUSTED := 1.
+	X509_TRUST_REJECTED := 2.
+	X509_TRUST_UNTRUSTED := 3.
+	X509_L_FILE_LOAD := 1.
+	X509_L_ADD_DIR := 2.
+	X509_L_ADD_STORE := 3.
+	X509_L_LOAD_STORE := 4.
+	X509_V_OK := 0.
+	X509_V_ERR_UNSPECIFIED := 1.
+	X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT := 2.
+	X509_V_ERR_UNABLE_TO_GET_CRL := 3.
+	X509_V_ERR_UNABLE_TO_DECRYPT_CERT_SIGNATURE := 4.
+	X509_V_ERR_UNABLE_TO_DECRYPT_CRL_SIGNATURE := 5.
+	X509_V_ERR_UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY := 6.
+	X509_V_ERR_CERT_SIGNATURE_FAILURE := 7.
+	X509_V_ERR_CRL_SIGNATURE_FAILURE := 8.
+	X509_V_ERR_CERT_NOT_YET_VALID := 9.
+	X509_V_ERR_CERT_HAS_EXPIRED := 10.
+	X509_V_ERR_CRL_NOT_YET_VALID := 11.
+	X509_V_ERR_CRL_HAS_EXPIRED := 12.
+	X509_V_ERR_ERROR_IN_CERT_NOT_BEFORE_FIELD := 13.
+	X509_V_ERR_ERROR_IN_CERT_NOT_AFTER_FIELD := 14.
+	X509_V_ERR_ERROR_IN_CRL_LAST_UPDATE_FIELD := 15.
+	X509_V_ERR_ERROR_IN_CRL_NEXT_UPDATE_FIELD := 16r10.
+	X509_V_ERR_OUT_OF_MEM := 16r11.
+	X509_V_ERR_DEPTH_ZERO_SELF_SIGNED_CERT := 16r12.
+	X509_V_ERR_SELF_SIGNED_CERT_IN_CHAIN := 16r13.
+	X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT_LOCALLY := 16r14.
+	X509_V_ERR_UNABLE_TO_VERIFY_LEAF_SIGNATURE := 16r15.
+	X509_V_ERR_CERT_CHAIN_TOO_LONG := 16r16.
+	X509_V_ERR_CERT_REVOKED := 16r17.
+	X509_V_ERR_NO_ISSUER_PUBLIC_KEY := 16r18.
+	X509_V_ERR_PATH_LENGTH_EXCEEDED := 16r19.
+	X509_V_ERR_INVALID_PURPOSE := 16r1A.
+	X509_V_ERR_CERT_UNTRUSTED := 16r1B.
+	X509_V_ERR_CERT_REJECTED := 16r1C.
+	X509_V_ERR_SUBJECT_ISSUER_MISMATCH := 16r1D.
+	X509_V_ERR_AKID_SKID_MISMATCH := 16r1E.
+	X509_V_ERR_AKID_ISSUER_SERIAL_MISMATCH := 16r1F.
+	X509_V_ERR_KEYUSAGE_NO_CERTSIGN := 16r20.
+	X509_V_ERR_UNABLE_TO_GET_CRL_ISSUER := 16r21.
+	X509_V_ERR_UNHANDLED_CRITICAL_EXTENSION := 16r22.
+	X509_V_ERR_KEYUSAGE_NO_CRL_SIGN := 16r23.
+	X509_V_ERR_UNHANDLED_CRITICAL_CRL_EXTENSION := 16r24.
+	X509_V_ERR_INVALID_NON_CA := 16r25.
+	X509_V_ERR_PROXY_PATH_LENGTH_EXCEEDED := 16r26.
+	X509_V_ERR_KEYUSAGE_NO_DIGITAL_SIGNATURE := 16r27.
+	X509_V_ERR_PROXY_CERTIFICATES_NOT_ALLOWED := 16r28.
+	X509_V_ERR_INVALID_EXTENSION := 16r29.
+	X509_V_ERR_INVALID_POLICY_EXTENSION := 16r2A.
+	X509_V_ERR_NO_EXPLICIT_POLICY := 16r2B.
+	X509_V_ERR_DIFFERENT_CRL_SCOPE := 16r2C.
+	X509_V_ERR_UNSUPPORTED_EXTENSION_FEATURE := 16r2D.
+	X509_V_ERR_UNNESTED_RESOURCE := 16r2E.
+	X509_V_ERR_PERMITTED_VIOLATION := 16r2F.
+	X509_V_ERR_EXCLUDED_VIOLATION := 16r30.
+	X509_V_ERR_SUBTREE_MINMAX := 16r31.
+	X509_V_ERR_APPLICATION_VERIFICATION := 16r32.
+	X509_V_ERR_UNSUPPORTED_CONSTRAINT_TYPE := 16r33.
+	X509_V_ERR_UNSUPPORTED_CONSTRAINT_SYNTAX := 16r34.
+	X509_V_ERR_UNSUPPORTED_NAME_SYNTAX := 16r35.
+	X509_V_ERR_CRL_PATH_VALIDATION_ERROR := 16r36.
+	X509_V_ERR_PATH_LOOP := 16r37.
+	X509_V_ERR_SUITE_B_INVALID_VERSION := 16r38.
+	X509_V_ERR_SUITE_B_INVALID_ALGORITHM := 16r39.
+	X509_V_ERR_SUITE_B_INVALID_CURVE := 16r3A.
+	X509_V_ERR_SUITE_B_INVALID_SIGNATURE_ALGORITHM := 16r3B.
+	X509_V_ERR_SUITE_B_LOS_NOT_ALLOWED := 16r3C.
+	X509_V_ERR_SUITE_B_CANNOT_SIGN_P_384_WITH_P_256 := 16r3D.
+	X509_V_ERR_HOSTNAME_MISMATCH := 16r3E.
+	X509_V_ERR_EMAIL_MISMATCH := 16r3F.
+	X509_V_ERR_IP_ADDRESS_MISMATCH := 16r40.
+	X509_V_ERR_DANE_NO_MATCH := 16r41.
+	X509_V_ERR_EE_KEY_TOO_SMALL := 16r42.
+	X509_V_ERR_CA_KEY_TOO_SMALL := 16r43.
+	X509_V_ERR_CA_MD_TOO_WEAK := 16r44.
+	X509_V_ERR_INVALID_CALL := 16r45.
+	X509_V_ERR_STORE_LOOKUP := 16r46.
+	X509_V_ERR_NO_VALID_SCTS := 16r47.
+	X509_V_ERR_PROXY_SUBJECT_NAME_VIOLATION := 16r48.
+	X509_V_ERR_OCSP_VERIFY_NEEDED := 16r49.
+	X509_V_ERR_OCSP_VERIFY_FAILED := 16r4A.
+	X509_V_ERR_OCSP_CERT_UNKNOWN := 16r4B.
+	X509_V_ERR_UNSUPPORTED_SIGNATURE_ALGORITHM := 16r4C.
+	X509_V_ERR_SIGNATURE_ALGORITHM_MISMATCH := 16r4D.
+	X509_V_ERR_SIGNATURE_ALGORITHM_INCONSISTENCY := 16r4E.
+	X509_V_ERR_INVALID_CA := 16r4F.
+	X509_V_ERR_PATHLEN_INVALID_FOR_NON_CA := 16r50.
+	X509_V_ERR_PATHLEN_WITHOUT_KU_KEY_CERT_SIGN := 16r51.
+	X509_V_ERR_KU_KEY_CERT_SIGN_INVALID_FOR_NON_CA := 16r52.
+	X509_V_ERR_ISSUER_NAME_EMPTY := 16r53.
+	X509_V_ERR_SUBJECT_NAME_EMPTY := 16r54.
+	X509_V_ERR_MISSING_AUTHORITY_KEY_IDENTIFIER := 16r55.
+	X509_V_ERR_MISSING_SUBJECT_KEY_IDENTIFIER := 16r56.
+	X509_V_ERR_EMPTY_SUBJECT_ALT_NAME := 16r57.
+	X509_V_ERR_EMPTY_SUBJECT_SAN_NOT_CRITICAL := 16r58.
+	X509_V_ERR_CA_BCONS_NOT_CRITICAL := 16r59.
+	X509_V_ERR_AUTHORITY_KEY_IDENTIFIER_CRITICAL := 16r5A.
+	X509_V_ERR_SUBJECT_KEY_IDENTIFIER_CRITICAL := 16r5B.
+	X509_V_ERR_CA_CERT_MISSING_KEY_USAGE := 16r5C.
+	X509_V_ERR_EXTENSIONS_REQUIRE_VERSION_3 := 16r5D.
+	X509_V_ERR_EC_KEY_EXPLICIT_PARAMS := 16r5E.
+	X509_V_ERR_RPK_UNTRUSTED := 16r5F.
+	X509_V_FLAG_CB_ISSUER_CHECK := 16r0.
+	X509_V_FLAG_USE_CHECK_TIME := 16r2.
+	X509_V_FLAG_CRL_CHECK := 16r4.
+	X509_V_FLAG_CRL_CHECK_ALL := 16r8.
+	X509_V_FLAG_IGNORE_CRITICAL := 16r10.
+	X509_V_FLAG_X509_STRICT := 16r20.
+	X509_V_FLAG_ALLOW_PROXY_CERTS := 16r40.
+	X509_V_FLAG_POLICY_CHECK := 16r80.
+	X509_V_FLAG_EXPLICIT_POLICY := 16r100.
+	X509_V_FLAG_INHIBIT_ANY := 16r200.
+	X509_V_FLAG_INHIBIT_MAP := 16r400.
+	X509_V_FLAG_NOTIFY_POLICY := 16r800.
+	X509_V_FLAG_EXTENDED_CRL_SUPPORT := 16r1000.
+	X509_V_FLAG_USE_DELTAS := 16r2000.
+	X509_V_FLAG_CHECK_SS_SIGNATURE := 16r4000.
+	X509_V_FLAG_TRUSTED_FIRST := 16r8000.
+	X509_V_FLAG_SUITEB_128_LOS_ONLY := 16r10000.
+	X509_V_FLAG_SUITEB_192_LOS := 16r20000.
+	X509_V_FLAG_SUITEB_128_LOS := 16r30000.
+	X509_V_FLAG_PARTIAL_CHAIN := 16r80000.
+	X509_V_FLAG_NO_ALT_CHAINS := 16r100000.
+	X509_V_FLAG_NO_CHECK_TIME := 16r200000.
+	X509_VP_FLAG_DEFAULT := 16r1.
+	X509_VP_FLAG_OVERWRITE := 16r2.
+	X509_VP_FLAG_RESET_FLAGS := 16r4.
+	X509_VP_FLAG_LOCKED := 16r8.
+	X509_VP_FLAG_ONCE := 16r10.
+	X509_V_FLAG_POLICY_MASK := 16r780	 "(X509_V_FLAG_POLICY_CHECK \
+                                | X509_V_FLAG_EXPLICIT_POLICY \
+                                | X509_V_FLAG_INHIBIT_ANY \
+                                | X509_V_FLAG_INHIBIT_MAP)".
+	DANE_FLAG_NO_DANE_EE_NAMECHECKS := 1	 "(1L << 0)".
+	X509_PCY_TREE_FAILURE := -2.
+	X509_PCY_TREE_INVALID := -1.
+	X509_PCY_TREE_INTERNAL := 0.
+	X509_PCY_TREE_VALID := 1.
+	X509_PCY_TREE_EMPTY := 2.
+	X509_PCY_TREE_EXPLICIT := 4
+]
