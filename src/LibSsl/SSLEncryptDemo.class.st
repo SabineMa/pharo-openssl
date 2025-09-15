@@ -12,7 +12,7 @@ Class {
 		'ssl'
 	],
 	#pools : [
-		'SSLSslTypedef'
+		'SSLTypedef'
 	],
 	#category : 'LibSsl-Demo',
 	#package : 'LibSsl',
