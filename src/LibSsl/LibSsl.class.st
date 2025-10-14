@@ -1,3 +1,112 @@
+"
+Bindings for [openssl]( https://www.openssl.org/).
+
+Generated with:
+```
+CigCLibraryGenerator new
+	prefix: 'SSL';
+	libraryName: 'ssl';
+	cExcludePath: '/usr/include';
+	cIncludePath: '/usr/include/openssl';
+	importUnit: '
+		#ifdef CIG_INCLUDE_TIME
+		/* taken from time.h, to not import the whole header */
+		struct timeval
+		{
+		  long tv_sec;			/* Seconds.  */
+  		  long tv_usec;			/* Microseconds.  */
+		};
+		struct tm
+		{
+		  int tm_sec;			/* Seconds.	[0-60] (1 leap second) */
+		  int tm_min;			/* Minutes.	[0-59] */
+		  int tm_hour;			/* Hours.	[0-23] */
+		  int tm_mday;			/* Day.		[1-31] */
+		  int tm_mon;			/* Month.	[0-11] */
+		  int tm_year;			/* Year	- 1900.  */
+		  int tm_wday;			/* Day of week.	[0-6] */
+		  int tm_yday;			/* Days in year.[0-365]	*/
+		  int tm_isdst;			/* DST.		[-1/0/1]*/
+		  long int tm_gmtoff;	/* Seconds east of UTC.  */
+		  const char *tm_zone;	/* Timezone abbreviation.  */
+		};
+		#endif
+		#import <openssl/aes.h>
+		#import <openssl/asn1.h>
+		#import <openssl/asn1t.h>
+		#import <openssl/bio.h>
+		#import <openssl/blowfish.h>
+		#import <openssl/bn.h>
+		#import <openssl/buffer.h>
+		#import <openssl/camellia.h>
+		#import <openssl/cast.h>
+		#import <openssl/cmac.h>
+		#import <openssl/conf.h>
+		#import <openssl/core.h>
+		#import <openssl/core_names.h>
+		#import <openssl/crypto.h>
+		#import <openssl/ct.h>
+		#import <openssl/des.h>
+		#import <openssl/dh.h>
+		#import <openssl/dsa.h>
+		#import <openssl/ec.h>
+		#import <openssl/ecdh.h>
+		#import <openssl/ecdsa.h>
+		#import <openssl/engine.h>
+		#import <openssl/err.h>
+		#import <openssl/evp.h>
+		#import <openssl/hmac.h>
+		#import <openssl/idea.h>
+		#import <openssl/kdf.h>
+		#import <openssl/md5.h>
+		#import <openssl/modes.h>
+		#import <openssl/objects.h>
+		#import <openssl/ocsp.h>
+		#import <openssl/opensslconf.h>
+		#import <openssl/opensslv.h>
+		#import <openssl/pem.h>
+		#import <openssl/pkcs12.h>
+		#import <openssl/pkcs7.h>
+		#import <openssl/provider.h>
+		#import <openssl/rand.h>
+		#import <openssl/rc2.h>
+		#import <openssl/rc4.h>
+		#import <openssl/ripemd.h>
+		#import <openssl/rsa.h>
+		#import <openssl/sha.h>
+		#import <openssl/srtp.h>
+		#import <openssl/ssl.h>
+		#import <openssl/tls1.h>
+		#import <openssl/ts.h>
+		#import <openssl/ui.h>
+		#import <openssl/whrlpool.h>
+		#import <openssl/x509.h>
+		#import <openssl/x509v3.h>';
+	cTypedef: 'pthread_once_t' as: #void;
+	cTypedef: 'pthread_key_t' as: #void;
+	cTypedef: 'pthread_t' as: #void;
+	cTypedef: 'intmax_t' as: #long;
+	cTypedef: 'uintmax_t' as: #ulong;
+	cTypedef: 'lhash_st_CONF_VALUE' as: 'lhash_st';
+	cTypedef: 'pkcs7_st' as: 'void';
+	cDefine: 'CIG_INCLUDE_TIME';
+	in: [ :this | 
+		#(
+		'ACCESS_DESCRIPTION' 'ASIdOrRange' 'ASN1_INTEGER' 'ASN1_OBJECT' 'ASN1_TYPE' 'ASN1_STRING'
+		'ASN1_UTF8STRING' 'CONF_VALUE' 'CONF_VALUE' 'DIST_POINT' 'GENERAL_NAME' 'GENERAL_SUBTREE' 
+		'IPAddressFamily' 'IPAddressOrRange' 'OPENSSL_CSTRING' 'OPENSSL_STRING'
+		'OSSL_ALLOWED_ATTRIBUTES_CHOICE' 'OSSL_ALLOWED_ATTRIBUTES_ITEM' 'OSSL_ATTRIBUTE_MAPPING'
+		'OSSL_DAY_TIME_BAND' 'OSSL_ROLE_SPEC_CERT_ID' 'OSSL_TIME_PERIOD' 'PKCS12_SAFEBAG' 'PKCS7'
+		'PKCS7_RECIP_INFO' 'PKCS7_SIGNER_INFO' 'POLICYINFO' 'POLICYQUALINFO' 'POLICY_MAPPING'
+		'PROFESSION_INFO' 'SCT' 'SRTP_PROTECTION_PROFILE' 'SSL_CIPHER' 'SSL_COMP' 'SSL_SESSION'
+		'SXNETID' 'USERNOTICE' 'X509' 'X509_ALGOR' 'X509_ATTRIBUTE' 'X509_CRL' 'X509_EXTENSION'
+		'X509_INFO' 'X509_NAME' 'X509_NAME_ENTRY' 'X509_OBJECT' 'X509_POLICY_NODE' 'X509_REVOKED'
+		'void' 'ADMISSIONS')
+		do: [ :each | this cTypedef: ('stack_st_', each) asSymbol as: 'stack_st' ] ];
+	withConstantGenerator: [ :gen | gen groupByHeader ];
+	generate. 
+```
+"
 Class {
 	#name : 'LibSsl',
 	#superclass : 'FFILibrary',
