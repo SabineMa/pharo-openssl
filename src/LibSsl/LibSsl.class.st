@@ -24628,7 +24628,7 @@ LibSsl >> win32LibraryName [
 
 	^ FFIWindowsLibraryFinder new
 		userPaths: #('./CIG/lib');
-		findLibrary: 'ssl.dll'
+		findLibrary: 'libcrypto-1_1-x64.dll'
 ]
 
 { #category : 'public - x509v3' }
